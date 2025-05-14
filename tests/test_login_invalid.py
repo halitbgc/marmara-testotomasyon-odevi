@@ -13,9 +13,9 @@ driver.get("https://the-internet.herokuapp.com/login")
 username_field = driver.find_element(By.ID, "username")
 password_field = driver.find_element(By.ID, "password")
 
-# Geçerli giriş bilgilerini gir
-username_field.send_keys("tomsmith")
-password_field.send_keys("SuperSecretPassword!")
+# Yanlış giriş bilgilerini gir
+username_field.send_keys("halitbagci")
+password_field.send_keys("wrongPassword!")
 
 # Giriş butonunu bul ve tıkla
 login_button = driver.find_element(By.CSS_SELECTOR, "button[type='submit']")
